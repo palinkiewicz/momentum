@@ -14,7 +14,7 @@ import java.util.Date
     ],
     foreignKeys = [
         ForeignKey(
-            HabitCountUnit::class,
+            CountUnit::class,
             parentColumns = ["id"],
             childColumns = ["habit_count_unit_id"],
             onUpdate = ForeignKey.CASCADE,
@@ -32,6 +32,7 @@ data class Habit (
     @ColumnInfo(name = "is_pinned") val isPinned: Boolean,
     @ColumnInfo(name = "order_no") val orderNo: Short,
     @ColumnInfo(name = "graphical_resource") val graphicalResource: Int,
-    @ColumnInfo(name = "created_at") val createdAt: Date,
+    @ColumnInfo(name = "start_at") val startAt: Date,
+    @ColumnInfo(name = "end_at") val endAt: Date,
     @ColumnInfo(name = "updated_at") val updatedAt: Date
 )
