@@ -6,12 +6,12 @@ import androidx.room.Index
 import androidx.room.PrimaryKey
 
 @Entity(
-    tableName = "habit_count_units",
+    tableName = "count_units",
     indices = [
         Index("id", unique = true)
     ]
 )
-class HabitCountUnit (
+class CountUnit (
     @PrimaryKey(autoGenerate = true) @ColumnInfo(name = "id") val id: Int = 0,
     @ColumnInfo(name = "name") val name: String,
     @ColumnInfo(name = "is_timed") val isTimed: Boolean,
