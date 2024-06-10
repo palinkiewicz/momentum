@@ -29,6 +29,8 @@ data class Habit (
     @ColumnInfo(name = "description") val description: String,
     @ColumnInfo(name = "target") val target: Int,
     @ColumnInfo(name = "is_target_min") val isTargetMin: Boolean,
+    @ColumnInfo(name = "is_pinned") val isPinned: Boolean,
+    @ColumnInfo(name = "order_no") val orderNo: Short,
     @ColumnInfo(name = "graphical_resource") val graphicalResource: Int,
     @ColumnInfo(name = "created_at") val createdAt: Date,
     @ColumnInfo(name = "updated_at") val updatedAt: Date

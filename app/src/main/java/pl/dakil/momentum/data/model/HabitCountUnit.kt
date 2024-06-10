@@ -16,5 +16,6 @@ class HabitCountUnit (
     @ColumnInfo(name = "name") val name: String,
     @ColumnInfo(name = "is_timed") val isTimed: Boolean,
     @ColumnInfo(name = "timed_interval") val timedInterval: UShort,
-    @ColumnInfo(name = "timed_value_change") val timedValueChange: Int
+    @ColumnInfo(name = "timed_value_change") val timedValueChange: Int,
+    @ColumnInfo(name = "order_no") val orderNo: Short
 )
