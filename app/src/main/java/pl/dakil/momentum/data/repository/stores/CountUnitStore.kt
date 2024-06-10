@@ -1,10 +1,10 @@
 package pl.dakil.momentum.data.repository.stores
 
 import kotlinx.coroutines.flow.Flow
-import pl.dakil.momentum.data.dao.CountUnitDao
-import pl.dakil.momentum.data.dao.CountUnitDisplayNameDao
-import pl.dakil.momentum.data.model.CountUnit
-import pl.dakil.momentum.data.model.CountUnitDisplayName
+import pl.dakil.momentum.data.database.dao.CountUnitDao
+import pl.dakil.momentum.data.database.dao.CountUnitDisplayNameDao
+import pl.dakil.momentum.data.database.model.CountUnit
+import pl.dakil.momentum.data.database.model.CountUnitDisplayName
 
 interface CountUnitStore {
     suspend fun createCountUnit(unit: CountUnit)

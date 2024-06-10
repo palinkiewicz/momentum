@@ -1,18 +1,18 @@
-package pl.dakil.momentum.data
+package pl.dakil.momentum.data.database
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import pl.dakil.momentum.data.dao.CountUnitDao
-import pl.dakil.momentum.data.dao.CountUnitDisplayNameDao
-import pl.dakil.momentum.data.dao.HabitDao
-import pl.dakil.momentum.data.dao.RecordedHabitDao
-import pl.dakil.momentum.data.model.Habit
-import pl.dakil.momentum.data.model.CountUnit
-import pl.dakil.momentum.data.model.CountUnitDisplayName
-import pl.dakil.momentum.data.model.RecordedHabit
+import pl.dakil.momentum.data.database.dao.CountUnitDao
+import pl.dakil.momentum.data.database.dao.CountUnitDisplayNameDao
+import pl.dakil.momentum.data.database.dao.HabitDao
+import pl.dakil.momentum.data.database.dao.RecordedHabitDao
+import pl.dakil.momentum.data.database.model.Habit
+import pl.dakil.momentum.data.database.model.CountUnit
+import pl.dakil.momentum.data.database.model.CountUnitDisplayName
+import pl.dakil.momentum.data.database.model.RecordedHabit
 
 @Database(
     entities = [

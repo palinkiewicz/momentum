@@ -1,4 +1,4 @@
-package pl.dakil.momentum.data.model
+package pl.dakil.momentum.data.database.model
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

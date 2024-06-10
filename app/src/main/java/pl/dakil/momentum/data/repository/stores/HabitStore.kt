@@ -1,10 +1,10 @@
 package pl.dakil.momentum.data.repository.stores
 
 import kotlinx.coroutines.flow.Flow
-import pl.dakil.momentum.data.dao.HabitDao
-import pl.dakil.momentum.data.dao.RecordedHabitDao
-import pl.dakil.momentum.data.model.Habit
-import pl.dakil.momentum.data.model.RecordedHabit
+import pl.dakil.momentum.data.database.dao.HabitDao
+import pl.dakil.momentum.data.database.dao.RecordedHabitDao
+import pl.dakil.momentum.data.database.model.Habit
+import pl.dakil.momentum.data.database.model.RecordedHabit
 import java.util.Date
 
 interface HabitStore {

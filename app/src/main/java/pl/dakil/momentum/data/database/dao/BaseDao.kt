@@ -1,4 +1,4 @@
-package pl.dakil.momentum.data.dao
+package pl.dakil.momentum.data.database.dao
 
 import androidx.room.Delete
 import androidx.room.Insert

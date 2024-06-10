@@ -1,9 +1,9 @@
-package pl.dakil.momentum.data.dao
+package pl.dakil.momentum.data.database.dao
 
 import androidx.room.Dao
 import androidx.room.Query
 import kotlinx.coroutines.flow.Flow
-import pl.dakil.momentum.data.model.Habit
+import pl.dakil.momentum.data.database.model.Habit
 
 @Dao
 interface HabitDao : BaseDao<Habit> {

@@ -1,4 +1,4 @@
-package pl.dakil.momentum.data
+package pl.dakil.momentum.data.database
 
 import androidx.room.TypeConverter
 import java.util.Date
