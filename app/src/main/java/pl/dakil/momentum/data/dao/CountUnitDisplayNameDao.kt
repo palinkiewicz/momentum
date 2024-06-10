@@ -8,8 +8,18 @@ import pl.dakil.momentum.data.model.CountUnitDisplayName
 @Dao
 interface CountUnitDisplayNameDao : BaseDao<CountUnitDisplayName> {
     @Query("SELECT * FROM count_unit_display_names WHERE count_unit_id = :unitId ORDER BY id")
-    fun getCountUnitDisplayNames(unitId: Int): Flow<List<CountUnitDisplayName>>
+    fun getMultiple(unitId: Int): Flow<List<CountUnitDisplayName>>
 
     @Query("SELECT * FROM count_unit_display_names WHERE id = :id")
-    fun getCountUnitDisplayName(id: Int): Flow<CountUnitDisplayName>
+    fun getOne(id: Int): Flow<CountUnitDisplayName>
+
+    @Query(
+        """
+        SELECT * FROM count_unit_display_names
+        WHERE count_unit_id = :unitId AND min_count <= :count
+        ORDER BY min_count DESC
+        LIMIT 1
+        """
+    )
+    fun getOneFromUnitIdAndCount(unitId: Int, count: Int): Flow<CountUnitDisplayName>
 }

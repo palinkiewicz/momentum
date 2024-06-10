@@ -8,8 +8,8 @@ import pl.dakil.momentum.data.model.CountUnit
 @Dao
 interface CountUnitDao : BaseDao<CountUnit> {
     @Query("SELECT * FROM count_units ORDER BY order_no ASC, id ASC")
-    fun getCountUnits(): Flow<List<CountUnit>>
+    fun getMultiple(): Flow<List<CountUnit>>
 
     @Query("SELECT * FROM count_units WHERE id = :id")
-    fun getCountUnit(id: Int): Flow<CountUnit>
+    fun getOne(id: Int): Flow<CountUnit>
 }
